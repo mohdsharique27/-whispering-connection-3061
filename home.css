@@ -1,0 +1,118 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+#nav{
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#searchbox{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(223, 217, 217);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+#nav button{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 15px; 
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+#nav img{
+    width: 40%;
+    height: 40%;
+}
+
+
+/* form */
+
+
+ /* form will be hidden by default  */
+  .form-popup {
+    display: none;
+  position: fixed;
+  bottom: 1;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+   
+    
+    
+  }
+
+  .form-container {
+    width: 450px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+
+  }
+
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .form-container a{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 30%;
+    
+  }
+
+  .form-container a:hover{
+    color: yellow;
+    cursor: pointer;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  .slideShow-container{
+    margin: 0%;
+    border: 1px solid black;
+    
+  }
+
+  .slideShow-container img{
+    width: 100%;
+    
+  }

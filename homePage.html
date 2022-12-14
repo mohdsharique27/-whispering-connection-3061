@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="./Images/logo.jpg" alt="">
+        </div>
+        <div>
+            <input type="search" placeholder="Search" id="searchbox">
+            <button id="signin" onclick="openForm()" >Sign In</button>
+        </div>
+        </div>
+    </div>
+    <div>
+         <!-- popup form -->
+        <div class="form-popup" id="myform">
+            <form action="/action_page.php " class="form-container">
+                <h1>Login </h1>
+
+                    <label for="email "><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" required><br>
+
+                    <label for="psw "><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <a href="login.html"> Crate an Watch Out Id</a>
+                    
+                    <button type="submit" class="btn"> Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+    </div>
+    <div class="slideShow-container">
+        <img src="https://imgs.search.brave.com/L2F4Us4Q3TAcH35OIoscINXjWrTxY84PKhJQEYBydXk/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5o/WnZ1dGp5dXc3OWdt/ZTRKcW05dl9BSGFF/SyZwaWQ9QXBp" alt="">
+    </div>
+
+</body>
+<script src="homePage.js"></script>
+</html>
