@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .signupform{
+            width: 80%;
+            margin: auto;
+            height: auto;
+        }
+        .signupform>div:nth-child(1){
+            margin-top: 20px;
+            margin-left: 41%;
+        }
+        #form{
+            
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        #form label{
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #form input[type = "text"]{
+            font-size: 18px;
+            padding: 8px;
+        }
+        #form input[type = "password"]{
+            font-size: 18px;
+            padding: 8px;
+        }
+        #form input[type = "submit"]{
+            border: none;
+            font-size: 18px;
+            padding: 8px;
+            margin-top: 10px;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        #submit:hover{
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="signupform">
+        <div>
+            <img src="./Images/logo.jpg" alt="">
+        </div>
+        <div >
+            <form action="" id="form">
+                <label for="name"><b>First Name</b></label>
+            <input type="text" id="firstname" placeholder="Enter Your First Name" required>
+            <label for="name"><b>Last Name</b> </label>
+            <input type="text" id="lastname" placeholder="Enter Your Last Name"required>
+            <label for="email"><b>Email</b> </label>
+            <input type="text" id="email" placeholder="Enter Your Email"required>
+            <label for="psw"><b>Password</b> </label>
+            <input type="password" id="psw" placeholder="Enter Password"required>
+            <label for="psw"><b>Confirm Password</b> </label>
+            <input type="password" id="confirm-psw" placeholder="Confirm Password"required>
+            <input type="submit" id="submit">
+            </form>
+
+        </div>
+    </div>
+</body>
+<script>
+    let users = JSON.parse(localStorage.getItem("usersData")) || [];
+    let signup = document.querySelector("#form");
+    document.querySelector('#form').addEventListener("submit",function(event){
+        event.preventDefault();
+         console.log("hello!");
+        // checking wheather the email is in our database or not 
+        let count = 0;
+        users.forEach(function (elem){
+            if(elem.email === signup.email.value){
+                count++;
+            }
+        });     
+        if(count>0){
+            alert("User already registered");
+        }   
+        else{
+            
+                let details = {
+                FirstName:document.querySelector("#firstname").value,
+                LastName:document.querySelector("#lastname").value,
+                Email:document.querySelector("#email").value,
+                Password:document.querySelector("#psw").value,
+                 };
+                users.push(details);
+
+                localStorage.setItem("UserData", JSON.stringify(users));
+                alert("WatchOut Id Created")
+                 signup.reset()
+                 window.location.href="homepage.html"
+        }
+    })
+    
+    
+
+</script>
+</html>

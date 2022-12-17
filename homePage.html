@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <img src="./Images/logo.jpg" alt="">
+        </div>
+        <div>
+            <input type="search" placeholder="Search" id="searchbox">
+            <button id="signin" onclick="openForm()" >Sign In</button>
+        </div>
+        </div>
+    </div>
+    <div>
+         <!-- popup form -->
+        <div class="form-popup" id="myform">
+            <form action="/action_page.php " class="form-container">
+                <h1>Login </h1>
+
+                    <label for="email "><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" required><br>
+
+                    <label for="psw "><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <a href="login.html"> Crate an Watch Out Id</a>
+                    
+                    <button type="submit" class="btn"> Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+    </div>
+    <div id="banner">
+        <img src="./Images/banner.PNG" alt="">
+    </div>
+    <div class="free">
+        <div class="heading"><h2>Watch Premieres for Free</h2></div>
+        
+        <div class="free-cards">
+            <div class="container">
+                <img src="https://imgs.search.brave.com/eISyz4h_lqSt14KUEXbEoIbO49_wgj-avysklmANp_s/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC45/Y1M2YmNfdk5QMndG/N1lIeWJTenpBSGFF/SyZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">Ted Lasso</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/KZ1hvAB0R2REHrS1tg2wSy3IL03fdttU5a4DDP1gq0g/rs:fit:835:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5F/SzlqU0hfMWJQUEZ6/czJZb1JQbk1BSGFF/TiZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">ECHO</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/eVuL6bzOHkYtMtnumVPds8ogM6lv9C04EqgWbIQStG4/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/WkJCNkJBSGI0eUFj/QU1LQTh4Zkp3SGFF/SyZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">EMANCIPATION</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/nZS-wmGREqNNuBmHM2qD5G5Pmh-qxBDrpL8Qsr5smlM/rs:fit:854:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Q/YnRDd2ZPQ1MwZGpu/VThHc0c2VFNRSGFF/SCZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">SEE The Final Chapter</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="free">
+        <div class="heading"><h2>Most Popular</h2></div>
+        
+        <div class="free-cards">
+            <div class="container">
+                <img src="https://imgs.search.brave.com/c7_OblZJQPfSh2IbXMWyye2daWu1GSQGKZm8x5QX1mw/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4x/S1B2cm5GZ0tqWGw3/MTV0U2NfVnRRSGFF/SyZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">Severance</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/ZJ4F25aBLJhQa9ONrBvvGh9zXRdOtQQB01u7TW_HG6k/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5j/ajVtSWtvS0xCQktM/VVEyMVBENnZnSGFF/SyZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">For All Man kind</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/vxy4U-CscnHcvPzXokQdKbf93naWSlnnOHGhs5kjmNg/rs:fit:981:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC42/YzgxcU9IbzlXOUVt/bWFVXzVGY0N3SGFE/bCZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">Little America</div>
+            </div>
+            <div class="container">
+                <img src="https://imgs.search.brave.com/1eg_qrUGl4_zO-i_Jvw63T3FbC1jE9_DJPNrUKyvkEM/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/Y181VVRtNTgtTDZW/NDBrRU9fMTBRSGFF/SyZwaWQ9QXBp" alt="" class="image">
+                <div class="overlay">The Banker</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="footer-container">
+            <div> <img src="./Images/footer.png" alt=""></div>
+            <h1>Watch Out here or anywhere</h1>
+            <p>Find Wach Out on the app available on Apple and Androind devices, smart Tvs, and more.</p>
+            <div id="devices"><img src="./Images/Capture.PNG" alt=""></div><br>
+            <h2>See it on your big screens.</h2>
+            <div id="devices1"><img src="./Images/Capture1.PNG" alt=""></div><br>
+        </div>
+    </div>
+    <div class="question-section">
+        <h1>Qestions?Answers</h1>
+        <div class="dropdown">
+            
+            
+          </div>
+
+    </div>
+</body>
+<script src="homePage.js"></script>
+</html>
