@@ -79,22 +79,23 @@
     </div>
 </body>
 <script>
-    let users = JSON.parse(localStorage.getItem("usersData")) || [];
+    let users = JSON.parse(localStorage.getItem("UsersData")) || [];
+    console.log(users)
     let signup = document.querySelector("#form");
     document.querySelector('#form').addEventListener("submit",function(event){
         event.preventDefault();
          console.log("hello!");
+         console.log(signup.email.value)
         // checking wheather the email is in our database or not 
         let count = 0;
         users.forEach(function (elem){
-            if(elem.email === signup.email.value){
+            if(elem.Email === signup.email.value){
+                alert("User already registered")
                 count++;
+
             }
         });     
-        if(count>0){
-            alert("User already registered");
-        }   
-        else{
+       
             
                 let details = {
                 FirstName:document.querySelector("#firstname").value,
@@ -104,11 +105,11 @@
                  };
                 users.push(details);
 
-                localStorage.setItem("UserData", JSON.stringify(users));
+                localStorage.setItem("UsersData", JSON.stringify(users));
                 alert("WatchOut Id Created")
                  signup.reset()
-                 window.location.href="homepage.html"
-        }
+                 window.location.href="/"
+        
     })
     
     
