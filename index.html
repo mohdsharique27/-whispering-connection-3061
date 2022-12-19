@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div style="display:flex;width:100vw;height:100vh;justify-content: center; align-items: center;" id="loading">
+        <img height="50" src="./Images/loading.gif" />
+    </div>
+    <div id="main">
+    <div id="nav">
+        <div id="logo">
+            <img src="./Images/logo.jpg" alt="">
+        </div>
+        <div>
+            <input type="search" placeholder="Search" id="searchbox">
+            <button id="signin" onclick="openForm()" >Sign In</button>
+        </div>
+        </div>
+        <div id="banner">
+            <img src="./Images/banner.PNG" alt="">
+        </div>
+        <div class="free">
+            <div class="heading"><h2>Watch Premieres for Free</h2></div>
+            
+            <div class="free-cards">
+                
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="free">
+            <div class="heading"><h2>Most Popular</h2></div>
+            
+            <div class="free-cards popular-cards">
+               
+            </div>
+        </div>
+        <div class="footer">
+            <div id="footer-container">
+                <div> <img src="./Images/footer.png" alt=""></div>
+                <h1>Watch Out here or anywhere</h1>
+                <p>Find Wach Out on the app available on Apple and Androind devices, smart Tvs, and more.</p>
+                <div id="devices"><img src="./Images/Capture.PNG" alt=""></div><br>
+                <h2>See it on your big screens.</h2>
+                <div id="devices1"><img src="./Images/Capture1.PNG" alt=""></div><br>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+         <!-- popup form -->
+        <div   id="myform">
+            <form  class="form-container">
+                <h1>Login </h1>
+
+                    <label for="email "><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" required><br>
+
+                    <label for="psw "><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <a href="login.html"> Crate an Watch Out Id</a>
+                    
+                    <button type="submit" class="btn"> Login</button>
+                    <button type="button" class="btn cancel" 
+                      onclick="closeForm()">Close</button>
+            </form>
+        </div>
+</div>
+</body>
+<script src="homePage.js"></script>
+</html>
